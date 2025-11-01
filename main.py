@@ -7,7 +7,7 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolb
 import matplotlib.pyplot as plt
 import numpy as np
 
-client=MongoClient('mongodb+srv://ua7088:n2iqvV6f1NxqwXga@database.68msv4d.mongodb.net/?retryWrites=true&w=majority&appName=database')
+client=MongoClient('')#removed mongodb client id for privacy, can create new via Atlas
 db = client["users_database"]
 collection=db["user"]
 collection.create_index("scores")
@@ -588,6 +588,7 @@ def settings():
     settings_page.mainloop()
 
     
+
 
 
 
